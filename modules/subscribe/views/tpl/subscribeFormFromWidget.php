@@ -1,0 +1,1 @@
+<?php $this->widget->widget(array(), $this->params)?>

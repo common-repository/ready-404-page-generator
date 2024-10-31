@@ -1,0 +1,57 @@
+.fhfStplSocLinks-3 {
+	float: left;
+    height: 32px;
+    text-indent: 8000px;
+    width: 32px;
+	background: url("../img/soc_icons/socmed.png") no-repeat scroll left bottom rgba(0, 0, 0, 0);
+	margin: 0px 10px 10px 0px;
+	-o-transition:all .3s;
+	-moz-transition:all .3s;
+	-webkit-transition:all .3s;
+	-ms-transition:all .3s;
+}
+.fhfStplSocLinks-3:hover {
+	background: url("../img/soc_icons/socmed.png") no-repeat left top;
+}
+
+.fhfStplSocLink-twitter-3 {background-position:-0px bottom}
+.fhfStplSocLink-twitter-3:hover{background-position:-0px top}
+
+.fhfStplSocLink-facebook-3 {background-position:-33px bottom}
+.fhfStplSocLink-facebook-3:hover{background-position:-33px top}
+
+.fhfStplSocLink-tumblr-3 {background-position:-66px bottom}
+.fhfStplSocLink-tumblr-3:hover{background-position:-66px top}
+
+.fhfStplSocLink-dribbble-3 {background-position:-99px bottom}
+.fhfStplSocLink-dribbble-3:hover{background-position:-99px top}
+
+.fhfStplSocLink-linkedin-3 {background-position:-133px bottom}
+.fhfStplSocLink-linkedin-3:hover{background-position:-133px top}
+
+.fhfStplSocLink-delicious-3 {background-position:-199px bottom}
+.fhfStplSocLink-delicious-3:hover{background-position:-199px top}
+
+.fhfStplSocLink-flickr-3 {background-position:-331px bottom}
+.fhfStplSocLink-flickr-3:hover{background-position:-331px top}
+
+.fhfStplSocLink-myspace-3 {background-position:-397px bottom}
+.fhfStplSocLink-myspace-3:hover{background-position:-397px top}
+
+.fhfStplSocLink-sharethis-3 {background-position:-464px bottom}
+.fhfStplSocLink-sharethis-3:hover{background-position:-464px top}
+
+.fhfStplSocLink-skype-3 {background-position:-497px bottom}
+.fhfStplSocLink-skype-3:hover{background-position:-497px top}
+
+.fhfStplSocLink-vimeo-3 {background-position:-562px bottom}
+.fhfStplSocLink-vimeo-3:hover{background-position:-562px top}
+
+.fhfStplSocLink-youtube-3 {background-position:-594px bottom}
+.fhfStplSocLink-youtube-3:hover{background-position:-594px top}
+
+.fhfStplSocLink-yahoo-3 {background-position:-628px bottom}
+.fhfStplSocLink-yahoo-3:hover{background-position:-628px top}
+
+.fhfStplSocLink-google_plus-3 {background-position:-730px bottom}
+.fhfStplSocLink-google_plus-3:hover{background-position:-730px top}

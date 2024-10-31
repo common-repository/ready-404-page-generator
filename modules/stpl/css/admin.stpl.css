@@ -1,0 +1,346 @@
+/**
+* Stpl
+*/
+.fhfStplCanvasRow {
+	padding: 5px 0;
+}
+.fhfStplCanvasRowContent {
+	height: 100px;
+	/*border: 1px black dashed;*/
+	position: relative;
+	padding-bottom: 6px;
+	margin: 1px;
+}
+.fhfStplCanvasRowContent:hover, .fhfStplCanvasRowContent.fhfStplHover {
+	background: rgba(216, 216, 216, .1);
+}
+/*display settings box*/
+.fhfStplCanvasRowContent:hover .fhfStplCanvasRowSettings, .fhfStplCanvasRowContent.fhfStplHover .fhfStplCanvasRowSettings {
+	display: block;
+}
+.fhfStplCanvasRowSettings {
+	position: absolute;
+	z-index: 99;
+	top: -24px;
+	padding: 2px;
+	left: 0;
+	background-color: inherit;
+	border-top-right-radius: 5px;
+	display: none; /*hidden by default, display it on hover event, in css*/
+}
+.fhfStplCanvasCellSettings {
+	position: absolute;
+	z-index: 101;
+	top: -22px;
+	right: 0;
+	padding: 2px;
+	background-color: inherit;
+	border-top-left-radius: 5px;
+	display: none; /*hidden by default, display it on hover event, in css*/
+}
+.fhfStplCanvasRowIconMove {
+	background-image: url(img/arrow_updown.png);
+	cursor: move !important;
+}
+.fhfStplCanvasCellIconMove {
+	background-image: url(img/arrow_leftright.png);
+	cursor: move !important;
+}
+/*.fhfStplCanvasRowIconBgColor {
+	background-image: url(img/background_color_icon.png);
+}*/
+.fhfStplCanvasRowIconColumns {
+	background-image: url(img/columns_icon.png);
+}
+.fhfStplCanvasCellIconEdit {
+	background-image: url(img/column_setting_icon.png);
+}
+.fhfStplCanvasRowIconRemove, .fhfStplCanvasCellIconRemove {
+	background-image: url(img/remove_icon.png);
+}
+.fhfStplCanvasRowSetting {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.fhfStplCanvasCellSetting {
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.fhfStplCanvasRowColumnsNumShell {
+	position: absolute;
+	left: 70px;
+	z-index: 100;
+	top: -24px;
+	background-color: #808080;
+	border-radius: 2px;
+	padding: 2px;
+}
+.fhfStplCanvasRowColumnsNumShell input {
+	margin: 0 !important;
+}
+.fhfStplCanvasRowColumnsNumItem {
+	float: left;
+	margin-right: 5px;
+}
+.fhfStplCanvasRowColumnsNumText {
+	width: 30px !important;
+}
+.fhfStplCanvasCol {
+	height: 100%;
+	/*border: 1px grey dashed;*/
+	
+	margin: 3px;
+	float: left;
+	width: 98%;
+}
+.fhfStplCanvasCol:hover, .fhfStplCanvasCol.fhfStplHover {
+	/*background-color: #EEEEEE;*/
+	background: rgba(238, 238, 238, .4);
+}
+/*display settings box*/
+.fhfStplCanvasCol:hover .fhfStplCanvasCellSettings, .fhfStplCanvasCol.fhfStplHover .fhfStplCanvasCellSettings {
+	display: block;
+}
+#fhfStplCanvasSettings {
+	position: absolute;
+	width: 380px;
+	background: none;
+	border: none;
+}
+#fhfStplCanvasSettings .ui-tabs-nav{
+	width: 100%;
+	border: none;
+	color: black;
+	box-shadow: none;
+}
+#fhfStplCanvasSettings .ui-tabs-nav li {
+	float: left;
+	clear: none;
+	width: 50px !important;
+    background:#dddddd;
+	font-weight: normal;
+	padding: 10px 3px 12px 3px;
+    border:1px solid #cfcfcf;
+    border-right:1px solid #cfcfcf !important;
+	border-bottom: none !important;
+    box-shadow:none;
+    text-align:center;
+    
+    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    margin:0 18px -3px 0;
+    
+    position:relative;
+    z-index:1;
+}
+
+#fhfStplCanvasSettings .ui-tabs-nav li a {
+    color:#9f9f9f;
+    padding:0 !important;
+    outline:none;
+    width:50px;
+    font-weight:normal !important;
+}
+
+#fhfStplCanvasSettings .ui-tabs-nav li.ui-tabs-active a {
+    color:#646464;
+}
+
+#fhfStplCanvasSettings .ui-tabs-nav li.ui-tabs-active {
+    border-bottom:1px solid #ededed;
+    background:#ededed;
+    z-index:21;
+    padding-bottom:10px !important;
+    margin-bottom:-1px !important;
+}
+
+#fhfStplCanvasSettings .ui-tabs-nav li.ui-tabs-active .left-corner {
+    background:url(img/left-active.png) no-repeat; 
+    position:absolute;
+    left:-19px;
+    width:22px;
+    height: 37px;
+    top:-1px;
+}
+
+#fhfStplCanvasSettings .ui-tabs-nav li .left-corner {
+    background:url(img/left-corner.png) no-repeat; 
+    position:absolute;
+    left:-19px;
+    width:22px;
+    height: 37px;
+    top:-1px;
+}
+
+#fhfStplCanvasSettings .ui-tabs-nav li:first-child .left-corner {
+    display:none;
+}
+
+#fhfStplCanvasSettings .ui-tabs-nav li.ui-tabs-active .right-corner {
+    background:url(img/right-active.png) no-repeat; 
+    position:absolute;
+    right:-19px ;
+    width:22px;
+    height: 37px;
+    top:-1px;
+}
+
+#fhfStplCanvasSettings .ui-tabs-nav li .right-corner {
+    background:url(img/right-corner.png) no-repeat; 
+    position:absolute;
+    right:-19px;
+    width:22px;
+    height: 37px;
+    top:-1px;
+}
+
+#fhfStplCanvasSettings .ui-tabs-panel {
+    min-width:215px !important;
+    border-right:1px solid #cfcfcf;
+    background:#ededed;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    position:relative;
+    z-index:20;
+}
+
+.fhfStplCanvasSettingElement {
+	float: left;
+	border-radius: 5px;
+    float: left;
+    margin-bottom: 10px;
+    padding: 5px;
+	border: 1px solid #CCCCCC;
+	background-color: #F9F9F9;
+}
+.fhfStplCanvasSettingsContent {
+	overflow: visible !important;
+}
+.fhfStplCanvasSettingsContent .fhfStplCanvasSettingElement {
+	float: none !important;
+}
+.fhfStplCanvasElement {
+	float: left;
+	z-index: 2000;
+	border: 1px solid transparent;
+}
+.fhfStplCanvasElement:hover {
+	border: 1px dashed #CCCCCC;
+}
+.fhfStplCanvasContentEditing {
+	background-color: #F9F9F9 !important;
+	border: 1px solid #CCCCCC;
+}
+/*.fhfStplCanvasElementEditing * {
+	z-index: 2000;
+}*/
+
+.fhfStplCanvasElementPlaceholder {
+	border: 1px black solid;
+	border-radius: 5px;
+}
+
+.fhfStplCanvasColContent {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.fhfStplCanvasRowEnd {
+	clear: both;
+}
+.fhfStplCanvasRowSortHelper, .fhfStplCanvasColSortHelper {
+	border: 1px dashed #000000;
+	background: #A8A8A8;
+}
+.fhfStplCanvasColSortHelper {
+	display: block !important;
+	float: left;
+	margin: 2px;
+}
+.fhfStplCanvasSettingFieldSet {
+	padding: 10px;
+	border: 1px solid #D8D8D8;
+}
+.fhfStplCanvasSettingFieldSet:hover {
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.fhfStplCanvasBgImgStretch {
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.fhfStplCanvasBgImgCenter {
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.fhfStplCanvasBgImgTile {
+	background-repeat: repeat;
+}
+.fhfStplCanvasContentElementOriginal {
+	float: left;
+	width: 125px;
+	text-align: center;
+	background-position: center top;
+	background-repeat: no-repeat;
+	padding-right: 5px;
+	padding-bottom: 20px;
+	cursor: move;
+}
+.fhfStplCanvasContentElementOriginal img {
+	border: 1px solid #D8D8D8;
+	border-radius: 4px;
+}
+.fhfStplCanvasDividerOriginal {
+	cursor: pointer;
+}
+.fhfStplCanvasDividerImg {
+	width: 100%;
+}
+/* Make not visible big text "Select color"*/
+.fhfStplCanvasRowSettings .wp-color-result, 
+.fhfStplCanvasSettingStylesShell .wp-color-result {
+	padding-left: 10px;
+	height: 20px;
+}
+.fhfStplCanvasRowSettings .wp-color-result:after, 
+.fhfStplCanvasSettingStylesShell .wp-color-result:after {
+	content: '';
+}
+.fhfStplCanvasRowSettings .wp-picker-container,
+.fhfStplCanvasSettingStylesShell .wp-picker-container {
+	float: left;
+}
+/*********/
+.fhfStplCanvasSocialDesignButtShell label {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom: 1px solid #FBD850 !important;
+	
+}
+.fhfStplCanvasSocialDesignButtShell label.ui-state-active {
+	border-bottom: 0px !important;
+}
+.fhfStplCanvasSocialDesignPresentation {
+	background-color: #FFFFFF;
+    border: 1px solid #FBD850;
+    float: left;
+    padding: 0px 0px 0px 5px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	margin-top: -2px;
+}
+.stplCanvasCellAjaxHideData {
+	display: none;
+}
